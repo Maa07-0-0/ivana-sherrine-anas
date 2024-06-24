@@ -1,0 +1,280 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f5f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    background-color: #f8ebe8;
+    color: #333;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; /* Centered container with margin */
+    padding: 20px;
+    background-color: #fff; /* Added white background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    color: #333;
+    text-transform: uppercase; /* Added text transform for a modern look */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-size: 1em;
+    color: #333;
+    transition: color 0.3s;
+    text-transform: uppercase; /* Added text transform for consistency */
+}
+
+.nav-links a:hover {
+    color: #d4a59a;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f3e9e7;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Added a subtle hover effect */
+}
+
+.profile-picture:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.name {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #d4a59a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c48c7f;
+}
+
+.btn.video {
+    background-color: #fff;
+    color: #d4a59a;
+    border: 2px solid #d4a59a;
+}
+
+.btn.video:hover {
+    background-color: #d4a59a;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #d4a59a;
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #c48c7f;
+}
+
+.summary,
+.hourly-rate,
+.experience,
+.education,
+.services,
+.client-testimonials,
+.contact-me {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f5f1; /* Light background color */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.summary:last-child,
+.hourly-rate:last-child,
+.experience:last-child,
+.education:last-child,
+.services:last-child,
+.client-testimonials:last-child,
+.contact-me:last-child {
+    margin-bottom: 0;
+}
+
+.section-box {
+    background-color: #fff; /* White background */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section-box:last-child {
+    margin-bottom: 0;
+}
+
+section h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #d4a59a;
+}
+
+ul li ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+ul li ul li {
+    padding-left: 0;
+}
+
+ul li ul li:before {
+    content: '–';
+    left: -10px;
+}
+
+.services ul {
+    padding-left: 0;
+}
+
+.services ul li {
+    margin: 10px 0;
+}
+
+.services ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #d4a59a;
+    font-size: 1.2em;
+    margin-top: -2px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo a {
+        font-size: 1.3em;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
+
+    .social-links a {
+        font-size: 1em;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .section-content p {
+        font-size: 1em;
+    }
+}
